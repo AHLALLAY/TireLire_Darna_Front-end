@@ -3,7 +3,7 @@ function App() {
 
   return (
     <>
-      <div className="placehoder">this is app.jsx</div>
+      <div className="placeholder">this is app.jsx</div>
     </>
   )
 }
