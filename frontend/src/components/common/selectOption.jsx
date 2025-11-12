@@ -2,7 +2,7 @@ function SelectOption({data, id, labelstyle, labelText, inputStyle, required, va
     return (
         <div className="space-y-1">
             <label htmlFor={id} className={labelstyle}>
-                {labelText} {required && <span className="text-red-600">*</span>}
+                {labelText} {required && <span className="text-danger">*</span>}
             </label>
             <select 
                 id={id}
@@ -11,7 +11,7 @@ function SelectOption({data, id, labelstyle, labelText, inputStyle, required, va
                 required={required}
                 className={inputStyle}
             >
-                <option value="">Choisir ...</option>
+                <option value="">Choose ...</option>
                 {data && data.map(item => (
                     <option key={item.value} value={item.value}>
                         {item.label}
