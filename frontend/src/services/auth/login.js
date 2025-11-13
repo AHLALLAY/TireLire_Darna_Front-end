@@ -7,24 +7,22 @@ async function login(email, password) {
             console.log('services/login => success');
             return {
                 success: true,
-                data: response.data
+                data: response.data,
             };
         } else {
             console.error('services/login => failed');
             return {
+                success: false,
                 message:'error',
-                success: false
             };
         }
     } catch (error) {
         console.error(`services/login : ${error}`);
         return {
+            success: false,
             message: `error: ${error}`,
-            success: false
         };
     }
 }
 
-export default {
-    login
-};
+export default login;
