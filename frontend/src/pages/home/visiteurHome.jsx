@@ -1,18 +1,15 @@
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Button from '../../components/common/button';
+import SearchBar from '../../components/common/searchBar';
 
 function VisiteurHome() {
     const navigate = useNavigate();
-    const [searchQuery, setSearchQuery] = useState('');
 
-    const handleSearch = (e) => {
-        e.preventDefault();
-        // Redirection vers la page de recherche avec les critères
-        navigate('/recherche', { state: { query: searchQuery } });
+    const handleSearch = (query) => {
+        navigate('/recherche', { state: { query } });
     };
 
-    // Données d'exemple pour les annonces vedettes (à remplacer par des données API)
+    
     const featuredListings = [
         {
             id: 1,
@@ -96,25 +93,10 @@ function VisiteurHome() {
                         </p>
                         
                         {/* Barre de recherche principale */}
-                        <form onSubmit={handleSearch} className="max-w-2xl mx-auto">
-                            <div className="bg-white rounded-lg shadow-2xl p-2 flex flex-col md:flex-row gap-2">
-                                <div className="flex-1">
-                                    <input
-                                        type="text"
-                                        placeholder="ابحث بالكلمات المفتاحية، المدينة، الحي..."
-                                        value={searchQuery}
-                                        onChange={(e) => setSearchQuery(e.target.value)}
-                                        className="w-full px-4 py-3 rounded-lg border-0 focus:outline-none focus:ring-2 focus:ring-primary text-neutral-dark bg-white"
-                                        dir="rtl"
-                                    />
-                                </div>
-                                <Button
-                                    type="submit"
-                                    text="بحث"
-                                    style="px-8 py-3 bg-primary hover:bg-primary-dark text-white font-semibold rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
-                                />
-                            </div>
-                        </form>
+                        <SearchBar 
+                            onSearch={handleSearch}
+                            placeholder="ابحث بالكلمات المفتاحية، المدينة، الحي..."
+                        />
                         
                         <div className="mt-8">
                             <Button
