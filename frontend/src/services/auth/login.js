@@ -13,7 +13,7 @@ async function login(email, password) {
             console.error('services/login => failed');
             return {
                 success: false,
-                message:'error',
+                message: response.message || 'Erreur de connexion',
             };
         }
     } catch (error) {

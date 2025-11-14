@@ -5,7 +5,7 @@ async function handleApi(endpoint, methode = 'GET', body = null, token = null) {
         const api = API_BASE + endpoint;
         const header = {
             'Content-Type': 'application/json',
-            'Authorization' : token ? `Bearer ${token}` : null 
+            ...(token && { 'Authorization': `Bearer ${token}` })
         }
         
         const options = {

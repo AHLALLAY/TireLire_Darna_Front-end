@@ -1,11 +1,14 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import LabeledInput from './../../components/common/labeledInput';
 import Button from '../../components/common/button';
+import login from '../../services/auth/login'; 
 
 
 function Login() {
     const [formData, setFormData] = useState({ email: '', password: '' });
     const [error, setError] = useState('');
+    const navigate = useNavigate();
 
     const handleChange = (e) => {
         setFormData({
@@ -14,10 +17,15 @@ function Login() {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Logique de soumission à implémenter
-        console.log('Form submitted:', formData);
+        const res = await login(formData.email, formData.password);
+        if(res.success) {
+            navigate('/');
+            
+        } else {
+            setError(res.message);
+        }
     }
 
     return (
