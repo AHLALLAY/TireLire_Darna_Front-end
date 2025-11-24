@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Button from "./button.jsx";
+import LanguageSwitcher from "./languageSwitcher.jsx";
 
 function Header({ role = 1 }) {
     const visiteur = [
@@ -48,6 +49,8 @@ function Header({ role = 1 }) {
 
     return (
         <nav className="container mx-auto px-4 md:px-6 lg:px-8 flex justify-between items-center py-4" dir="rtl">
+
+            <LanguageSwitcher />
             <div className="flex items-center gap-2 md:gap-4 flex-wrap">
                 {role && chooseNavBar(role).map((element, index) => {
                     const isLogin = element.label === "تسجيل الدخول";
@@ -58,11 +61,11 @@ function Header({ role = 1 }) {
                             text={element.label}
                             action={handlActions(element.path)}
                             style={
-                                isSignUp 
+                                isSignUp
                                     ? "px-4 py-2 bg-primary text-black rounded-lg font-medium hover:bg-primary-dark hover:text-white transition-all duration-200 shadow-sm hover:shadow-md hover:shadow-primary/50"
                                     : isLogin
-                                    ? "px-4 py-2 border-2 border-primary text-white rounded-lg font-medium hover:bg-primary hover:text-black transition-all duration-200 shadow-sm hover:shadow-primary/50"
-                                    : "px-4 py-2 text-white rounded-lg font-medium hover:text-primary hover:bg-primary/20 transition-all duration-200"
+                                        ? "px-4 py-2 border-2 border-primary text-white rounded-lg font-medium hover:bg-primary hover:text-black transition-all duration-200 shadow-sm hover:shadow-primary/50"
+                                        : "px-4 py-2 text-white rounded-lg font-medium hover:text-primary hover:bg-primary/20 transition-all duration-200"
                             }
                         />
                     );
