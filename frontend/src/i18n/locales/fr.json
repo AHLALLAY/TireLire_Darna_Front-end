@@ -1,0 +1,192 @@
+{
+    "auth": {
+        "login": {
+            "title": "Connexion",
+            "subtitle": "Accéder à votre espace personnel",
+            "email": "Adresse e-mail",
+            "emailPlaceholder": "votre@email.com",
+            "password": "Mot de passe",
+            "passwordPlaceholder": "••••••••",
+            "submit": "Se connecter",
+            "noAccount": "Vous n'avez pas encore de compte ?",
+            "signup": "S'inscrire",
+            "errors": {
+                "required": "Veuillez remplir tous les champs",
+                "invalidEmail": "L'adresse e-mail n'est pas valide",
+                "invalidPassword": "Le mot de passe doit contenir au moins 8 caractères, une majuscule et un chiffre",
+                "generic": "Une erreur s'est produite lors de la connexion. Veuillez réessayer."
+            }
+        },
+        "register": {
+            "title": "Inscription",
+            "subtitle": "Créer un nouveau compte",
+            "fullName": "Nom complet",
+            "fullNamePlaceholder": "Votre nom complet",
+            "email": "Adresse e-mail",
+            "emailPlaceholder": "votre@email.com",
+            "password": "Mot de passe",
+            "passwordPlaceholder": "••••••••",
+            "submit": "Créer un compte",
+            "submitting": "Inscription en cours...",
+            "hasAccount": "Vous avez déjà un compte ?",
+            "login": "Se connecter",
+            "success": "Inscription réussie ! Vous allez être redirigé vers la page de connexion.",
+            "errors": {
+                "required": "Veuillez remplir tous les champs",
+                "invalidEmail": "L'adresse e-mail n'est pas valide",
+                "invalidPassword": "Le mot de passe doit contenir au moins 8 caractères, une majuscule et un chiffre",
+                "generic": "Une erreur s'est produite lors de l'inscription. Veuillez réessayer."
+            }
+        }
+    },
+    "navigation": {
+        "home": "Accueil",
+        "search": "Recherche",
+        "login": "Connexion",
+        "signup": "Inscription",
+        "myListings": "Mes annonces",
+        "messages": "Messages",
+        "notifications": "Notifications",
+        "profile": "Mon profil",
+        "logout": "Déconnexion",
+        "moderation": "Modération",
+        "statistics": "Statistiques",
+        "admin": "Administration"
+    },
+    "home": {
+        "hero": {
+            "title": "Trouvez votre propriété idéale",
+            "subtitle": "La plateforme qui combine annonces immobilières et épargne collective",
+            "searchPlaceholder": "Recherchez par mots-clés, ville, quartier...",
+            "discoverButton": "Découvrir les annonces"
+        },
+        "featured": {
+            "title": "Annonces vedettes",
+            "subtitle": "Découvrez nos meilleures sélections",
+            "featuredBadge": "Vedette",
+            "viewDetails": "Voir les détails",
+            "viewAll": "Voir toutes les annonces",
+            "currency": "DH",
+            "squareMeters": "m²",
+            "rooms": "pièce",
+            "roomsPlural": "pièces"
+        },
+        "features": {
+            "title": "Pourquoi choisir CoProp ?",
+            "subtitle": "Une plateforme complète pour votre projet immobilier",
+            "realEstate": {
+                "title": "Annonces immobilières",
+                "description": "Recherchez la propriété de vos rêves parmi des milliers d'annonces vérifiées"
+            },
+            "collectiveSavings": {
+                "title": "Épargne collective",
+                "description": "Participez à des groupes d'épargne Daret/Darna pour financer votre projet"
+            },
+            "directCommunication": {
+                "title": "Communication directe",
+                "description": "Communiquez directement avec les vendeurs via notre système de chat"
+            },
+            "secure": {
+                "title": "Sécurisé et fiable",
+                "description": "Plateforme sécurisée avec modération des annonces et vérification des utilisateurs"
+            }
+        },
+        "cta": {
+            "title": "Êtes-vous prêt à commencer ?",
+            "subtitle": "Créez votre compte gratuitement et profitez de toutes les fonctionnalités",
+            "signup": "S'inscrire",
+            "login": "Se connecter"
+        }
+    },
+    "search": {
+        "title": "Recherche d'annonces",
+        "placeholder": "Recherchez par mots-clés, ville, quartier...",
+        "searchButton": "Rechercher",
+        "noResults": "Aucun résultat trouvé",
+        "resultsCount": "résultat",
+        "resultsCountPlural": "résultats"
+    },
+    "listings": {
+        "featured": "Vedette",
+        "price": "Prix",
+        "location": "Localisation",
+        "surface": "Surface",
+        "rooms": "Pièce",
+        "roomsPlural": "Pièces",
+        "viewDetails": "Voir les détails",
+        "contactSeller": "Contacter le vendeur",
+        "share": "Partager",
+        "save": "Enregistrer"
+    },
+    "error": {
+        "404": {
+            "title": "Désolé, page introuvable",
+            "message": "Il semble que la page que vous recherchez n'existe pas ou a été déplacée",
+            "submessage": "Ne vous inquiétez pas, vous pouvez retourner à la page d'accueil ou rechercher votre propriété idéale",
+            "goHome": "Retour à la page d'accueil",
+            "searchProperty": "Rechercher une propriété"
+        },
+        "500": {
+            "title": "Erreur serveur",
+            "message": "Une erreur s'est produite sur le serveur",
+            "tryAgain": "Réessayer"
+        },
+        "generic": {
+            "title": "Une erreur s'est produite",
+            "message": "Quelque chose s'est mal passé",
+            "goHome": "Retour à l'accueil"
+        }
+    },
+    "common": {
+        "languages": {
+            "ar": "العربية",
+            "fr": "Français"
+        },
+        "loading": "Chargement...",
+        "save": "Enregistrer",
+        "cancel": "Annuler",
+        "delete": "Supprimer",
+        "edit": "Modifier",
+        "view": "Voir",
+        "close": "Fermer",
+        "confirm": "Confirmer",
+        "yes": "Oui",
+        "no": "Non",
+        "search": "Rechercher",
+        "filter": "Filtrer",
+        "sort": "Trier",
+        "apply": "Appliquer",
+        "reset": "Réinitialiser",
+        "next": "Suivant",
+        "previous": "Précédent",
+        "submit": "Soumettre",
+        "back": "Retour",
+        "continue": "Continuer",
+        "required": "Requis",
+        "optional": "Optionnel"
+    },
+    "validation": {
+        "required": "Ce champ est requis",
+        "email": "Veuillez entrer une adresse e-mail valide",
+        "password": "Le mot de passe doit contenir au moins 8 caractères, une majuscule et un chiffre",
+        "passwordMatch": "Les mots de passe ne correspondent pas",
+        "minLength": "Ce champ doit contenir au moins {{min}} caractères",
+        "maxLength": "Ce champ ne peut pas dépasser {{max}} caractères",
+        "numeric": "Ce champ doit être un nombre",
+        "phone": "Veuillez entrer un numéro de téléphone valide"
+    },
+    "messages": {
+        "success": {
+            "saved": "Enregistré avec succès",
+            "deleted": "Supprimé avec succès",
+            "updated": "Mis à jour avec succès",
+            "created": "Créé avec succès"
+        },
+        "error": {
+            "generic": "Une erreur s'est produite",
+            "network": "Erreur de connexion. Veuillez vérifier votre connexion internet",
+            "unauthorized": "Vous n'êtes pas autorisé à effectuer cette action",
+            "notFound": "Ressource introuvable"
+        }
+    }
+}
