@@ -8,8 +8,8 @@ function LanguageSwitcher() {
     const dropdownRef = useRef(null);
 
     const languages = [
-        { code: 'ar', name: 'العربية', flag: '🇲🇦', icon: '/ar.png' },
-        { code: 'fr', name: 'Français', flag: '🇫🇷', icon: '/fr.png' },
+        { code: 'ar', name: 'العربية', flag: '🇲🇦', icon: '/locale/ar.png' },
+        { code: 'fr', name: 'Français', flag: '🇫🇷', icon: '/locale/fr.png' },
     ];
 
 
