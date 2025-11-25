@@ -29,7 +29,8 @@ async function handleApi(endpoint, methode = 'GET', body = null, token = null) {
     } catch (error) {
         return {
             message: `error: ${error}`,
-            status: 'failed'
+            status: 'failed',
+            error: error.name
         };
     }
 }
