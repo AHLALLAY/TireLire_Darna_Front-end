@@ -1,13 +1,13 @@
 import handleApi from './../api.js'
 
-async function register(fullName, email, password) {
+async function register(name, email, password) {
     try {
         const body = {
-            fullName: fullName,
+            name: name,
             email: email,
             password: password,
         };
-        const response = await handleApi('/register', 'POST', body);
+        const response = await handleApi('/api/auth/register', 'POST', body);
         if (response.status === 'success') {
             console.log('services/register => success');
             return {
