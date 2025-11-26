@@ -1,32 +1,36 @@
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import Button from "./button.jsx";
 import LanguageSwitcher from "./languageSwitcher.jsx";
 
 function Header({ role = 1 }) {
+    const {t, i18n} = useTranslation();
+
     const visiteur = [
-        { label: "الرئيسية", path: "/" },
-        { label: "البحث", path: "/search" },
-        { label: "تسجيل الدخول", path: "/login" },
-        { label: "التسجيل", path: "/signup" }
+        { label: t("navigation.home"), path: "/" },
+        { label: t("navigation.search"), path: "/search" },
+        { label: t("navigation.login"), path: "/login" },
+        { label: t("navigation.signup"), path: "/signup" }
     ];
 
     const authentifiedUsers = [
-        { label: "الرئيسية", path: "/" },
-        { label: "البحث", path: "/search" },
-        { label: "إعلاناتي", path: "/my-listings" },
-        { label: "الرسائل", path: "/messages" },
-        { label: "الإشعارات", path: "/notifications" },
-        { label: "ملفي الشخصي", path: "/my-profile" },
-        { label: "تسجيل الخروج", path: "/logout" }
+        { label: t("navigation.home"), path: "/" },
+        { label: t("navigation.search"), path: "/search" },
+        { label: t("navigation.myListings"), path: "/my-listings" },
+        { label: t("navigation.messages"), path: "/messages" },
+        { label: t("navigation.notifications"), path: "/notifications" },
+        { label: t("navigation.profile"), path: "/my-profile" },
+        { label: t("navigation.logout"), path: "/logout" }
     ];
 
     const admin = [
-        { label: "الرئيسية", path: "/" },
-        { label: "البحث", path: "/search" },
-        { label: "المراقبة", path: "/moderation" },
-        { label: "الإحصائيات", path: "/statistics" },
-        { label: "ملفي الشخصي", path: "/my-profile" },
-        { label: "تسجيل الخروج", path: "/logout" }
+        { label: t("navigation.home"), path: "/" },
+        { label: t("navigation.search"), path: "/search" },
+        { label: t("navigation.moderation"), path: "/moderation" },
+        { label: t("navigation.statistics"), path: "/statistics" },
+        { label: t("navigation.profile"), path: "/my-profile" },
+        { label: t("navigation.logout"), path: "/logout" }
     ];
 
     const chooseNavBar = (role) => {
