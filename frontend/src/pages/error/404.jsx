@@ -1,8 +1,10 @@
 import Button from "../../components/common/button";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Error404() {
     const navigate = useNavigate();
+    const { t, i18n } = useTranslation();
 
     const goToHome = () => {
         navigate('/');
@@ -29,14 +31,14 @@ function Error404() {
 
                 {/* Message principal */}
                 <div className="mb-8">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4" dir="rtl">
-                        عذراً، الصفحة غير موجودة
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                        {t("error.404.title")}
                     </h2>
-                    <p className="text-lg md:text-xl text-neutral-text mb-2" dir="rtl">
-                        يبدو أن الصفحة التي تبحث عنها غير موجودة أو تم نقلها
+                    <p className="text-lg md:text-xl text-neutral-text mb-2">
+                        {t("error.404.message")}
                     </p>
-                    <p className="text-base text-neutral-text" dir="rtl">
-                        لا تقلق، يمكنك العودة إلى الصفحة الرئيسية أو البحث عن عقارك المثالي
+                    <p className="text-base text-neutral-text">
+                        {t("error.404.submessage")}
                     </p>
                 </div>
 
@@ -44,12 +46,12 @@ function Error404() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
                     <Button
                         action={goToHome}
-                        text="العودة إلى الصفحة الرئيسية"
+                        text={t("error.404.goHome")}
                         style="px-8 py-3 bg-primary hover:bg-primary-dark text-black hover:text-white font-semibold rounded-lg transition-all duration-200 shadow-md hover:shadow-lg hover:shadow-primary/50 transform hover:-translate-y-0.5"
                     />
                     <Button
                         action={goToSearch}
-                        text="البحث عن عقار"
+                        text={t("error.404.searchProperty")}
                         style="px-8 py-3 border-2 border-primary text-white hover:bg-primary hover:text-black font-semibold rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
                     />
                 </div>
