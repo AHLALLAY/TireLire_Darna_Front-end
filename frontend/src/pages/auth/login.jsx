@@ -76,6 +76,11 @@ function Login() {
                             {error}
                         </div>
                     )}
+                    {success && (
+                        <div className="bg-success-dark border border-success text-white px-4 py-3 rounded-lg text-sm">
+                            {success}
+                        </div>
+                    )}
                 </form>
 
                 <div className='text-center pt-4 border-t border-neutral'>
