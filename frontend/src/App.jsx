@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import VisiteurHome from "./pages/home/visiteurHome";
 import Layout from "./components/layout/layout";
-import Login from "./pages/auth/login";
+import Login from "./pages/auth/login"
 import Register from "./pages/auth/register";
 import Error404 from "./pages/error/404";
+import AdminDashboard from "./pages/admin/dashboard";
 
 function App() {
 
@@ -14,10 +15,11 @@ function App() {
           <Route index element={<VisiteurHome />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Register />} />
+          <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="*" element={<Error404 />} />
         </Route>
       </Routes>
-   </BrowserRouter>
+    </BrowserRouter>
   )
 }
 
